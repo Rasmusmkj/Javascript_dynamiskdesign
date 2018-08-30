@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLSHIT</title>
+</head>
+
+<body>
+
+    <div class="dyret">
+        <div><strong class="navn"></strong><span class="type"></span></div>
+    </div>
+
+    <script>
+        let dyr = {
+            "navn": "Myggen: ",
+            "type": "irriterende insekt",
+            "levested": " alle fucking steder"};
+
+        console.log("En " + dyr.navn + " er et " + dyr.type + " som lever " + dyr.levested);
+
+        document.querySelector(".navn").textContent = dyr.navn
+        document.querySelector(".type").textContent = " er et " + dyr.type + ", som lever i " + dyr.levested;
+    </script>
+
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

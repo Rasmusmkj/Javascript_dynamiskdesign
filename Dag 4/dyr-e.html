@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyrene</title>
+    
+<style>
+    img { 
+    max-width: 150px;
+    max-height: 200px;
+    }    
+    
+</style>
+</head>
+
+<body>
+
+    <div class="dyr"></div>
+
+
+    <script>
+        let dyr = [{
+                "navn": "Myggen: ",
+                "type": "irriterende insekt",
+                "levested": "alle fucking steder",
+            "billede":"dyr1.jpg"
+            },
+            {
+                "navn": "Skarabæen: ",
+                "type": "sødt nok insekt",
+                "levested": "primært Ægypten",
+                "billede":"dyr2.jpeg"
+            },
+            {
+                "navn": "Skøjteløberen: ",
+                "type": "irriterende insekt",
+                "levested": "søer og vandløb",
+                "billede":"dyr3.jpg"
+            },
+        ]
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            dyr.forEach(animal => {
+            document.querySelector(".dyr").innerHTML += "<img src='" + animal.billede + "' alt= ''> " + 
+            animal.navn + ": " + 
+            animal.type + " fra " + 
+            animal.levested + "<br> ";
+            })
+        }
+    </script>
+
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
